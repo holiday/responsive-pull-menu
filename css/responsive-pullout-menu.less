@@ -1,0 +1,105 @@
+
+/* Non-Responsive colors */
+@navbg: #fff;
+@logo-bg: #594F4F;
+@theme-background-color: #C02942; /* default theme color of menu red/green/etc */
+@font-color: #45473D;			  /* font color of non-responsive view */
+@hover-font-color: #fff; 		  /* hover font color of non-responsive view */
+
+/* Responsive colors */
+@theme-hover-color: #D33450; 	  /* hover theme color */
+@res-font-color: #eebfc7;	      /* font color when you hover in responsive mode */
+@res-list-border-top: #C75454;	  /* color of border separating each link in responsive mode */
+
+
+html, body {
+	overflow-x: hidden;
+}
+
+a:active, a:visited { 
+    border: none;
+    outline: none;
+}
+
+nav#left {
+	width: 240px;
+	height: 100%;
+	float: left;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left:-240px;
+	background-color: @theme-background-color;
+}
+
+nav#left ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav#left ul li {
+	font-size: 16px;
+	text-align: center;
+	border-bottom: 1px solid @res-list-border-top;
+}
+
+nav#left ul li a {
+	text-transform: uppercase;
+	padding: 15px 20px;
+	display: block;
+	color: @res-font-color;
+	text-decoration: none;
+}
+
+nav#left ul li a:hover {
+	text-decoration: none;
+	color: @res-font-color;
+}
+
+nav#left ul li:hover {
+	background-color: @theme-hover-color;
+}
+
+.logo {
+	background-color: @logo-bg;
+}
+
+#wrapper {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	float: left;
+}
+
+.section {
+	color: @res-font-color;
+	padding:20px 15px 15px 15px;
+	border-bottom: 1px solid @res-list-border-top;
+}
+
+/* Top Navigation Stuff */
+
+nav#top {
+	width: 100%;
+	height: 58px;
+	position: fixed;
+	top: 0;
+	background-color: @navbg;
+	color: @font-color;
+}
+
+nav#top a#responsive-btn{
+	position: absolute;
+	top: 0;
+	background-color: @theme-background-color;
+	background-image: url('../img/menu-dashes.png');
+	display: block;
+	width: 58px;
+	height: 58px;
+}
+
+nav#top a#responsive-btn:hover{
+	background-color: @theme-hover-color;
+}
+
