@@ -5,12 +5,12 @@ $(function(){
 
 	$('#responsive-btn').click(function(){
 		if(position == 0){
-			$('nav#left').animate({"left": '+=240px'}, speed);
-			$('#wrapper').animate({"left": '+=240px'}, speed);
+			$('nav#left').animate({"margin-left": '+=240px'}, speed);
+			$('#wrapper').animate({"margin-left": '+=240px'}, speed);
 			position = 1;
 		}else{
 			$('nav#left').animate({"left": '-=240px'}, speed);
-			$('#wrapper').animate({"left": '-=240px'}, speed);
+			$('#wrapper').animate({"margin-left": '-=240px'}, speed);
 			position = 0;
 		}
 		
