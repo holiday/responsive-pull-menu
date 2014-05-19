@@ -60,7 +60,7 @@ nav#left ul li:hover {
 	background-color: @theme-hover-color;
 }
 
-.logo {
+nav#left .logo {
 	background-color: @logo-bg;
 }
 
@@ -91,10 +91,18 @@ nav#top a#responsive-btn{
 	position: absolute;
 	top: 0;
 	background-color: @theme-background-color;
-	background-image: url('../img/menu-dashes.png');
 	display: block;
-	width: 58px;
-	height: 58px;
+	padding: 5px;
+	width: 60px;
+	height: 60px;
+}
+
+nav a#responsive-btn span.dash {
+	width: 30px;
+	height: 2px;
+	background-color: #fff;
+	display: block;
+	margin-bottom: 6px;
 }
 
 nav#top a#responsive-btn:hover{
